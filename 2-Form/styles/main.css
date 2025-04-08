@@ -9,7 +9,9 @@
     padding: 0;
 }
 body {
-    background-color: #F39494;
+    background: 
+    linear-gradient(to right, #FFA5A5, #FFFFFF00),
+    linear-gradient(to left, #FDC5C5, #F298DE00);
 }
 
 .registration {
