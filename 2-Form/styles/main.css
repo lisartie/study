@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'forText';
+    src: url('/fonts/OpenSans-Regular.woff') format('woff2'),
+        url('/fonts/OpenSans-Regular.woff2') format('woff');
+}
+* {
+    font-family: "forText", serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #F39494;
+}
+
+.registration {
+    background-color: #FFFEFE;
+    border-radius: 10px;
+    text-align: center;
+    width: 582px;
+    margin: auto;
+}
+.registration__block {
+
+}
+.registration__title {
+    font-weight: 700;
+    font-size: 36px;
+    color: #333333;
+}
+.registration__text {
+    color: #666666;
+
+}
+.registration__link {
+    color: #089FE0;
+}
+
+.registration__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__input {
+    border:none;
+    background-color: #F5F5F5;
+}
+.form__input::placeholder {
+    font-family: "forText", serif;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 400;
+}
+.form__button {
+    font-family: "forText", serif;
+    font-size: 18px;
+    background-color: #089FE0;
+    border: none;
+}
+.form__label {
+    font-family: "forText", serif;
+    font-size: 14px;
+}
+.form__link {
+    font-family: "forText", serif;
+    font-size: 14px;
+    color: #089FE0;
+    text-decoration: none;
+}
