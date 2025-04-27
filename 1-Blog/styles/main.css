@@ -4,7 +4,6 @@
          url('assets/fonts/RobotoFlex-Regular.woff2') format('woff');
 }
 * {
-    margin: auto;
     padding: 0px;
     font-family: 'forText', sans-serif;
 }
