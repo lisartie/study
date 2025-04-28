@@ -12,10 +12,10 @@ body {
     linear-gradient(to left, #FDC5C5, #F298DE00);
 }
 .registration {
-    position: relative;
-    top: 50px;
+    position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 50px);
+    transform: translate(-50%, -50%);
     background-color: #FFFEFE;
     border-radius: 10px;
     width: 582px;
