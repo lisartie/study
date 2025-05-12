@@ -1,0 +1,35 @@
+.header {
+    background: var(--color-bg);
+    padding: 40px 0px 0px;
+}
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--width-container-desktop);
+    margin: 0 auto;
+}
+.header__list {
+    display: flex;
+    gap: 32px;
+    list-style-type: none;
+}
+.header__list a {
+    font-size: 18px;
+    line-height: var(--line-height-standart);
+    font-weight: 500;
+    color: var(--color-text-1-opacity);
+    transition: 0.5s;
+}
+.header__list a:hover {
+    color: var(--color-text-1);
+}
+.header__button {
+    padding: var(--paddings-button);
+    border-radius: var(--border-radius-button-1);
+    background-color: var(--color-button-1);
+    color: var(--color-text-3);
+    font-size: var(--font-size-buttons);
+    line-height: var(--line-height-standart);
+    font-weight: var(--font-weight-button);
+}
