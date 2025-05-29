@@ -44,3 +44,26 @@
 .footer__link:hover {
     color: var(--color-text-1);
 }
+
+@media (max-width: 500px) {
+    .footer_wrapper {
+        max-width: var(--width-container-mobile);
+    }
+    .footer__navigation {
+        flex-direction: column;
+        gap: 48px;
+        padding: 64px 0px 48px;
+    }
+    .footer__other {
+        display: flex;
+        flex-direction: column;
+        padding: 48px 0px 64px;
+    }
+    .footer__payment {
+        margin-bottom: 24px;
+        order: -1;
+    }
+    .footer__picture {
+        margin-bottom: 20px;
+    }
+}

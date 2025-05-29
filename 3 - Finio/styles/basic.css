@@ -5,9 +5,9 @@
 }
 
 :root {
-
-    --width-container-desktop: 1392px;
-    --width-container-table: 700px;
+    --width-container-desktop: 1440px;
+    --width-container-desktop-mini: 1156px;
+    --width-container-tabletop: 1392px;
     --width-container-mobile: 328px;
 
     --color-bg: #357EFE;
@@ -23,12 +23,15 @@
     --font-size-text-1: 17px;
 
     --font-size-title-1: 48px;
+    --font-size-title-2: 36px;
+
 
     --line-height-standart: 140%;
 
     --color-button-1: #FFFFFF;
     --color-button-2: #357EFE;
     --paddings-button: 12px 32px;
+    --paddings-button-mobile: 12px 23px;
     --border-radius-button-1: 34px;
     --border-radius-button-2: 47px; 
     --font-weight-button: 800;
@@ -37,6 +40,7 @@
 
     --paddings-sections-for-desktop-1: 120px 0px 80px;
     --paddings-sections-for-desktop-2: 80px 0px 120px;
+    --paddings-sections-for-mobile: 64px 0px 48px;
 
 
     --font: 'Inter', sans-serif;
