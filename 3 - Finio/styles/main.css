@@ -338,7 +338,6 @@
 .card__price {
     display: grid;
     grid-template-columns: 1.8fr 1fr;
-: first baseline;
 }
 .card__description, .card__description_white, .card__money, .card__money_white {
     font-size: var(--font-size-text-1);
@@ -362,6 +361,8 @@
     color: var(--color-text-1);
 }
 .card__money_yellow {
+    position: relative;
+    left: -15px;
     padding: 8px 14px;
     border-radius: 8px;
     font-size: var(--font-size-text-1);
