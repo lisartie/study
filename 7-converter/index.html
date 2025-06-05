@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="#">
+        <input id="amountToConvertation" type="text" placeholder="Сумма к конвертации" required>
+        <label for="originalCurrency">Валюта</label>
+        <select name="" id="originalCurrency" required>
+            <option value="1">RUR ₽</option>
+            <option value="2">EUR €</option>
+            <option value="3">USD $</option>
+            <option value="4">JPY ¥</option>
+            <option value="5">GEL ₾</option>
+            <option value="6">TRY ₺</option>
+            <option value="7">GHS ₵</option>
+        </select>
+        <label for="desiredConvertation">Валюта в которую нужно конвертировать</label>
+        <select name="" id="desiredConvertation" required>
+            <option value="1">USD $</option>
+            <option value="2">EUR €</option>
+            <option value="3">RUR ₽</option>
+            <option value="4">JPY ¥</option>
+            <option value="5">GEL ₾</option>
+            <option value="6">TRY ₺</option>
+            <option value="7">GHS ₵</option>
+        </select>
+    </form>
+    <button id="result">Узнать результат</button>
+    <p id="textResult"></p>
+
+    <script src="app/app.js"></script>
+</body>
+</html>
