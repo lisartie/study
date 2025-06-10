@@ -7,7 +7,10 @@
 :root {
     --width-container-desktop: 1440px;
     --width-container-desktop-mini: 1156px;
-    --width-container-tabletop: 1392px;
+    --width-container-tabletop: 900px;
+    --width-container-tabletop2: 500px;
+    --width-container-tabletop-mini: 800px;
+    --width-container-tabletop2-mini: 500px;
     --width-container-mobile: 328px;
 
     --color-bg: #357EFE;
