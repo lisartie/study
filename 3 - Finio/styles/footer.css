@@ -44,8 +44,12 @@
 .footer__link:hover {
     color: var(--color-text-1);
 }
-
-@media (max-width: 500px) {
+@media (max-width: 1393px) {
+    .footer_wrapper {
+        max-width: var(--width-container-tabletop-mini);
+    }
+}
+@media (max-width: 800px) {
     .footer_wrapper {
         max-width: var(--width-container-mobile);
     }

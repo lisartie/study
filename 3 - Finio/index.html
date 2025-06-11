@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <title>Finio</title>
+    <title>Finio - мониторнинг для маркетплейсов</title>
 </head>
 <body>
     <header class="header">
@@ -27,9 +27,9 @@
                     <li class="header__li"><a href="#contacts" class="header__link">Поддержка клиентов</a></li>
                 </ul>
             </nav>
-            <a href="#" class="header__button" type="button">Личный кабинет</a>
-            <button class="header__button-mmenu">
-                <img src="assets/images/icon/menu.svg" alt="Кнопка для открытия меню">
+            <a href="#" class="header__button" type="button" aria-label="Вход в личный кабинет">Вход в личный кабинет</a>
+            <button class="header__button-mmenu" aria-expanded="false" aria-haspopup="true">
+                <img src="assets/images/icon/menu.svg" alt="Кнопка для открытия мобильного меню">
             </button>
         </div>
     </header>
@@ -82,7 +82,7 @@
                 </div>
                 <div class="possibilities__block">
                     <picture class="possibilities__picture">
-                        <source srcset="assets/images/icon/money-48.svg" media="(max-width: 9000px)" alt="Иконка с изображением рубля" >
+                        <source srcset="assets/images/icon/money-48.svg" media="(max-width: 900px)" alt="Иконка с изображением рубля" >
                         <img src="assets/images/icon/money-64.svg" alt="">
                     </picture>
                     <p class="possibilities__text">От 990 рублей в месяц <br/> с полным функционалом</p>
@@ -97,14 +97,14 @@
                 <p class="purpose_text">Заранее планируйте предстоящие платежи и поступления средств. Тем самым, вы избежите неприятной ситуации с нехваткой средств на счетах</p>
             </div>
             <picture class="purpose__picture">
-                <source srcset="assets/images/image2-356.png" media="(max-width: 550px)" alt="График Баланс на конец месяца" >
+                <source srcset="assets/images/image2-356.png" media="(max-width: 500px)" alt="График Баланс на конец месяца" >
                 <source srcset="assets/images/image2-400.png" media="(max-width: 1295px)" alt="График Баланс на конец месяца" >
                 <img class="purpose__image" src="assets/images/image2-729.png" alt="График Баланс на конец месяца">
             </picture>
             </div>
             <div class="purpose__block">
             <picture class="purpose__picture">
-                <source srcset="assets/images/image3-328.png" media="(max-width: 550px)" alt="Скриншоты функций сервиса" >
+                <source srcset="assets/images/image3-328.png" media="(max-width: 500px)" alt="Скриншоты функций сервиса" >
                 <source srcset="assets/images/image3-400.png" media="(max-width: 1295px)" alt="График Баланс на конец месяца" >
                 <img class="purpose__image" src="assets/images/image3-664.png" alt="Скриншоты функций сервиса">
             </picture>
@@ -119,20 +119,23 @@
                 <p class="purpose_text">Находите точки роста, делайте упор на рентабельные товары и увеличивайте свой доход</p>
             </div>
             <picture class="purpose__picture">
-                <source srcset="assets/images/image4-327.png" media="(max-width: 550px)" alt="Круговая диаграмма с отображением доходности на различных маркетплейсах" >
+                <source srcset="assets/images/image4-327.png" media="(max-width: 500px)" alt="Круговая диаграмма с отображением доходности на различных маркетплейсах" >
                 <source srcset="assets/images/image4-400.png" media="(max-width: 1295px)" alt="График Баланс на конец месяца" >
                 <img class="purpose__image" src="assets/images/image4-641.png" alt="Круговая диаграмма с отображением доходности на различных маркетплейсах">
             </picture>
             </div>
             <div class="purpose__block">
                     <picture class="purpose__picture">
-                        <source srcset="assets/images/image7-327.svg" media="(max-width: 550px)" alt="Таблица доходов и расходов" >
-                        <img class="purpose__image" src="assets/images/image5-410.svg" alt="Таблица доходов и расходов">
+                        <source srcset="assets/images/image7-327.png" media="(max-width: 500px)" alt="Таблица доходов и расходов" >
+                        <source srcset="assets/images/image5-300.png" media="(max-width: 1295px)" alt="Таблица доходов и расходов" >
+                        <img class="purpose__image" src="assets/images/image5-410.png" alt="Таблица доходов и расходов">
                     </picture>
                     <picture class="purpose__picture purpose__pictupe_position">
-                        <img class="purpose__image purpose__image_position" src="assets/images/image6-450.svg" alt="Акцентное сравнение расходов и доходов в таблице">
+                        <source srcset="assets/images/image6-250.png" media="(max-width: 900px)" alt="Таблица доходов и расходов" >
+                        <source srcset="assets/images/image6-350.png" media="(max-width: 1295px)" alt="Таблица доходов и расходов" >
+                        <img class="purpose__image purpose__image_position" src="assets/images/image6-450.png" alt="Акцентное сравнение расходов и доходов в таблице">
                     </picture>
-                <div class="purpose__content purpose__content_right">
+                <div class="purpose__content purpose__content_right purpose__content_position">
                 <h2 class="purpose__title">Сокращайте лишние расходы</h2>
                 <p class="purpose_text">Анализируйте расходы, убирать ненужные издержки и находите возможности повышать прибыльность бизнеса</p>
                 </div>
@@ -153,7 +156,7 @@
                 <div class="presentation__list-wrapper">
                     <div class="presentation__block">
                         <h3 class="presentation__subtitle">Excel</h3>
-                        <ul class="presentation__list">
+                        <ul class="presentation__list" aria-label="Недостатки ведения продаж в прграмме Excel">
                             <li class="presentation__paragraph">Долгое внесение данных</li>
                             <li class="presentation__paragraph">Ручной ввод данных с маркетплейсов</li>
                             <li class="presentation__paragraph">Не удобная работа с телефона</li>
@@ -162,7 +165,7 @@
                     </div>
                     <div class="presentation__block">
                         <h3 class="presentation__subtitle">FINIO</h3>
-                        <ul class="presentation__list presentation__list_another-marker">
+                        <ul class="presentation__list presentation__list_another-marker" aria-label="Преимущества ведения продаж вместе с Finio">
                             <li class="presentation__paragraph">Внесение данных за пару кликов</li>
                             <li class="presentation__paragraph">Автоматическое получение данных по API</li>
                             <li class="presentation__paragraph">Удобная мобильная версия</li>
@@ -176,7 +179,7 @@
         <section class="security">
             <div class="security__block">
                 <picture>
-                    <source srcset="assets/images/icon/servers-64.svg" media="(max-width: 550px)" alt="Серверы" >
+                    <source srcset="assets/images/icon/servers-64.svg" media="(max-width: 500px)" alt="Серверы" >
                     <img src="assets/images/icon/servers-80.svg" alt="Серверы">
                 </picture>
                 <h3 class="security__title">Надёжные сервера на территории России</h3>
@@ -184,7 +187,7 @@
             </div>
             <div class="security__block">
                 <picture>
-                    <source srcset="assets/images/icon/ssl-64.svg" media="(max-width: 550px)" alt="SSL-шифрование" >
+                    <source srcset="assets/images/icon/ssl-64.svg" media="(max-width: 500px)" alt="SSL-шифрование" >
                     <img src="assets/images/icon/ssl-80.svg" alt="SSL-шифрование">
                 </picture>
                 <h3 class="security__title">Используем 256-битное SSL-шифрование</h3>
@@ -192,7 +195,7 @@
             </div>
             <div class="security__block">
                 <picture>
-                    <source srcset="assets/images/icon/security-64.svg" media="(max-width: 550px)" alt="Безопасность" >
+                    <source srcset="assets/images/icon/security-64.svg" media="(max-width: 500px)" alt="Безопасность" >
                     <img src="assets/images/icon/security-80.svg" alt="Безопасность">
                 </picture>
                 <h3 class="security__title">Не передаём ваши данные 3-им лицам</h3>
@@ -204,8 +207,10 @@
             <h2 class="mobile-version__title">Мобильная версия</h2>
             <p class="mobile-version__text">Пользоваться всем функционалом сервиса удобно в любом месте и с любых устройств</p>
             <picture class="mobile-version__picture">
-                <source srcset="assets/images/mobile-version-677.png" media="(max-width: 550px)" alt="Мобильная версия finio" >
-                <img class="mobile-version__image" src="assets/images/mobile-version-1128.svg" alt="Мобильная версия finio">
+                <source srcset="assets/images/mobile-version-600.png" media="(max-width: 500px)" alt="Мобильная версия finio" >
+                <source srcset="assets/images/mobile-version-500.png" media="(max-width: 800px)" alt="Мобильная версия finio" >
+                <source srcset="assets/images/mobile-version-900.png" media="(max-width: 1128px)" alt="Мобильная версия finio" >
+                <img class="mobile-version__image" src="assets/images/mobile-version-1128.png" alt="Мобильная версия finio">
             </picture>
         </section>
 
@@ -221,15 +226,15 @@
                 <div class="contacts__wrapper">
                     <div class="contacts__communication">
                         <img class="contacts__logo" src="assets/images/icon/telegram.svg" alt="Иконка мессенджера Телеграм">
-                        <a class="contacts__link" href="#">Telegram Finio</a>
+                        <a class="contacts__link" href="#"  aria-label="Ссылка на чат в Telegram">Telegram Finio</a>
                     </div>
                     <div class="contacts__communication">
                         <img class="contacts__logo" src="assets/images/icon/whatsapp.svg" alt="Иконка мессенджера Whatsapp">
-                        <a class="contacts__link" href="#">WhatsApp Finio</a>
+                        <a class="contacts__link" href="#" aria-label="Ссылка на чат в WhatsApp">WhatsApp Finio</a>
                     </div>
                     <div class="contacts__communication">
                         <img class="contacts__logo" src="assets/images/icon/mail.svg" alt="Иконка с почтовым конвертов - для связи по почте">
-                        <a class="contacts__link" href="mailto:hello@finio.ru">hello@finio.ru</a>
+                        <a class="contacts__link" href="mailto:hello@finio.ru" aria-label="Ссылка на написание письма">hello@finio.ru</a>
                     </div>
                 </div>
                 <p class="contscts__text">Кроме того, мы готовы помочь вам с переносом данных из других сервисов или Excel.</p>

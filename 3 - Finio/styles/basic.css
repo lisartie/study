@@ -5,7 +5,7 @@
 }
 
 :root {
-    --width-container-desktop: 1440px;
+    --width-container-desktop: 1393px;
     --width-container-desktop-mini: 1156px;
     --width-container-tabletop: 900px;
     --width-container-tabletop2: 500px;
@@ -41,8 +41,9 @@
     --font-size-buttons: 17px;
     --border-color: #4E5D7C14;
 
-    --paddings-sections-for-desktop-1: 120px 0px 80px;
-    --paddings-sections-for-desktop-2: 80px 0px 120px;
+    --paddings-sections-for-desktop-1: 120px 20px 80px;
+    --paddings-sections-for-desktop-2: 80px 20px 120px;
+    --paddings-sections-for-tabletop: 60px 20px 100px;
     --paddings-sections-for-mobile: 64px 0px 48px;
 
 

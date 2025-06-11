@@ -1,6 +1,6 @@
 .banner {
     background: var(--color-bg);
-    padding: 113px 20px 0px;
+    padding: var(--paddings-sections-for-desktop-1);
     overflow: hidden;
 }
 .banner__wrapper {
@@ -97,7 +97,7 @@
     margin-bottom: 24px;
 }
 .purpose_text {
-        font-size: 18px;
+    font-size: 18px;
     max-width: 500px;
     color: var(--color-text-4);
 }
@@ -106,9 +106,14 @@
     left: -275px;
     top: -30px
 }
+.purpose__content_position {
+    position: relative;
+    left: -250px;
+    min-width: 450px;
+}
 .presentation {
     background-color: var(--color-bg);
-    padding: 120px 0px;
+    padding: 120px 20px;
 }
 .presentation__wrapper {
     display: flex;
@@ -180,7 +185,6 @@
     line-height: var(--line-height-standart);
     color: var(--color-text-1-opacity);
 }
-
 .security {
     display: flex;
     justify-content: space-between;
@@ -268,7 +272,7 @@
     top: 4px;
 }
 .rate {
-    width: var(--width-container-desktop-mini);
+    max-width: var(--width-container-desktop-mini);
     margin: 80px auto;
 }
 .rate__title {
@@ -284,10 +288,11 @@
 .rate__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 24px
+    gap: 24px;
 }
 .card, .card_blue  {
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
     justify-content: flex-end;
     padding: 48px 40px;
@@ -295,7 +300,6 @@
     background-color: var(--color-bg-2);
     box-shadow: 0 0 32px 0px #4E5D7C16;
 }
-
 .card_blue {
     background-color: var(--color-bg);
 }
@@ -351,9 +355,8 @@
 .card__description_white, .card__money_white {
     color: var(--color-text-1);
 }
-
 .card__benefit {
-    display: inline-block;
+    display: inline;
     padding: 4px 16px;
     margin-bottom: 16px;
     border-radius: 10px;
@@ -448,8 +451,13 @@
     }
     .purpose__pictupe_position {
         position: relative;
-        left: -275px;
+        left: -205px;
         top: -30px
+    }
+    .purpose__content_position {
+        position: relative;
+        left: -180px;
+        min-width: 350px;
     }
     .possibilities__wrapper {
         gap: 10px;
@@ -459,7 +467,18 @@
         width: 228px;
         font-size: 17px;
     }
-
+    .security {
+        gap: 10px;
+        max-width: var(--width-container-tabletop);
+    }
+    .security__title {
+        margin: 24px 0px 20px;
+        font-size: 25px;
+    }
+    .security__text {
+        width: 280px;
+        font-size: 17px;
+    }
 }
 @media (max-width: 1156px) {
     .reviews {
@@ -501,20 +520,86 @@
     .presentation__paragraph {
         font-size: 16px;
     }
+    .mobile-version {
+        align-content: center;
+        width: var(--width-container-tabletop-mini);
+        padding: var(--paddings-sections-for-tabletop);
+    }
+    .rate {
+        width: var(--width-container-tabletop-mini);
+        margin: 80px auto;
+    }
+    .rate__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px;
+    }
+    .card, .card_blue  {
+        padding: 28px 20px;
+    }
+    .card__text, .card__text_opacity {
+        margin: 16px 0px 20px;
+        font-size: 15px;
+    }
+    .card__button, .card__button_white {
+        padding: 10px 30px;
+    }
+    .card__price {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1.8fr 1fr;
+    }
+    .card__description, .card__description_white, .card__money, .card__money_white {
+        font-size: 15px;
+    }
+    .card__money_yellow {
+        text-align: center;
+        position: relative;
+        left: -10px;
+        padding: 5px 5px;
+        font-size: 14px;
+    }
 }
 @media (max-width: 900px) {
     .banner__picture_absolute {
         left: -120px;
     }
+    .purpose {
+        max-width: var(--width-container-tabletop2);
+        padding: 0px 0px;
+    }
+    .purpose__block {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .purpose__pictupe_position {
+        position: relative;
+        left: 100px;
+        top: -250px;
+    }
+    .purpose__content_position {
+        position: relative;
+        left: 0px;
+        top: -140px;
+        min-width: 350px;
+    }
     .possibilities__wrapper {
         flex-direction: column;
-        gap:50px;
+        gap: 50px;
         justify-content: space-between;
         max-width: var(--width-container-tabletop2);
     }
     .possibilities__text {
         width: 328px;
         font-size: 24px;
+    }
+    .security {
+        flex-direction: column;
+        gap: 50px;
+        max-width: var(--width-container-tabletop2);
+    }
+    .security__text {
+        width: 500px;
     }
 }
 @media (max-width: 800px) {
@@ -570,6 +655,42 @@
         background-color: var(--color-bg-2);
         width: 40px;
         height: 40px;
+    }
+    .mobile-version {
+        width: var(--width-container-tabletop2-mini);
+    }
+    
+    .rate {
+        width: var(--width-container-tabletop2-mini);
+    }
+    .rate__wrapper {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .card, .card_blue  {
+        padding: 48px 40px;
+    }
+    .card__text, .card__text_opacity {
+        margin: 16px 0px 16px;
+        font-size: var(--font-size-text-1);
+    }
+    .card__button, .card__button_white {
+        text-align: center;
+    }
+    .card__price {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 2fr 1fr;
+    }
+    .card__description, .card__description_white, .card__money, .card__money_white {
+        font-size: var(--font-size-text-1);
+    }
+    .card__money_yellow {
+        text-align: center;
+        position: relative;
+        left: -37px;
+        padding: 0px 0px;
+        font-size: var(--font-size-text-1);
     }
 }
 
@@ -630,6 +751,12 @@
     }
     .purpose__content_right {
         margin-right: 0px;
+    }
+    .purpose__content_position {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        min-width: 320px;
     }
     .purpose__title {
         max-width: 320px;
@@ -700,6 +827,7 @@
         align-items: flex-start;
         width: var(--width-container-mobile);
         padding: var(--paddings-sections-for-mobile);
+        overflow: hidden;
     }
     .mobile-version__title {
         font-size: var(--font-size-title-2);
@@ -708,15 +836,6 @@
     .mobile-version__text {
         margin: 24px 0px 32px;
     }
-    .mobile-version__picture {
-        position: relative;
-        left: 100%;
-        transform: translateX(-328px);
-    }
-    .mobile-version__image {
-        width: 328px;
-    }
-
     .contacts {
         width: var(--width-container-mobile);
         border-radius: 16px;
@@ -764,8 +883,9 @@
     .card__button, .card__button_white {
         padding: 12px 59px;
     }
-
-
+    .card__money_yellow {
+        left: -15px;
+    }
     .reviews {
         width: var(--width-container-mobile);
         margin: 64px auto;
