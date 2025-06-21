@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="#">
+        <label for="documents">Имеются ли водительские права?</label>
+        <select name="" id="documents" required>
+            <option value="1">Да</option>
+            <option value="0">Нет</option>
+        </select>
+
+        <label for="age">Укажите возраст водителя</label>
+        <input id="age" type="text" placeholder="Только цифры" required>
+
+        <label for="alcohol">Водитель трезв?</label>
+        <select name="" id="alcohol" required>
+            <option value="1">Да</option>
+            <option value="0">Нет</option>
+        </select>
+    </form>
+
+    <button id="result">Узнать результат</button>
+
+    <script src="app/app.js"></script>
+</body>
+</html>
